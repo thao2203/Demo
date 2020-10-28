@@ -1,0 +1,83 @@
+﻿@model WebApplication1.Models.BAIVIET
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/_BaiViet_Lay.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BAIVIET</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.taiKhoanUs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.taiKhoanUs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.maBL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.maBL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.maDMC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.maDMC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tieuDe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tieuDe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.noiDung)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.noiDung)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hinhAnh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hinhAnh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.thoiGianDang)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.thoiGianDang)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.trangThai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trangThai)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.maBV }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

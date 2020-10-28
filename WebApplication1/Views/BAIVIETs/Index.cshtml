@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "~/Views/_BaiViet_Lay.cshtml";
+}
+@section Scripts{
+
+
+    <script src="~/script/js.js"></script>
+}
+
+
+<div ng-app="myapp" ng-controller="baiviet" class="row">
+    <div class="col-md-12">
+        <div class="section-title">
+            <h2 class="title">BÀI ĐĂNG MỚI NHẤT</h2>
+        </div>
+    </div>
+
+    <div ng-repeat="i in list" class="col-md-6">
+        <div class="post">
+            <a class="post-img" href="blog-post.html"><img src="~/assests/images/BaiDangMoiNhat1.jpg" alt=""></a>
+            <div class="post-body">
+                <div class="post-category">
+                    @* <a ng-repeat="a in listdmc" href="category.html">{{a.tenDMC}}</a>*@
+                </div>
+                <h3 class="post-title"><a href="blog-post.html">{{i.tieuDe}}</a></h3>
+                <ul class="post-meta">
+                    <li><a href="author.html">Thao Nguyen</a></li>
+                    <li>{{i.thoiGianDang | filterdate | date:'dd/MM/yyyy'}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    @*   <div class="clearfix visible-md visible-lg"></div>*@
+
+</div>
